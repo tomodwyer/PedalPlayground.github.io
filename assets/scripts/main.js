@@ -687,9 +687,9 @@ window.listPedals = function (pedals) {
 	if ($("#list-pedals").length) {
 		// console.log('List pedals...');
 		for (var i in pedals) {
-			multiplier = 40;
-			Width = pedals[i].Width * multiplier;
-			Height = pedals[i].Height * multiplier;
+			const multiplier = 40;
+			const Width = pedals[i].Width * multiplier;
+			const Height = pedals[i].Height * multiplier;
 
 			var $pedalListing = $(
 				'<div class="pedal-listing">\

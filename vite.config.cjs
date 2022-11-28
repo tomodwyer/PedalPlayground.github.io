@@ -1,9 +1,18 @@
+import { resolve } from "node:path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 /**
  * @type {import('vite').UserConfig}
  */
 const config = {
+	build: {
+		rollupOptions: {
+			input: {
+				main: resolve(__dirname, "index.html"),
+				all: resolve(__dirname, "all.html"),
+			},
+		},
+	},
 	plugins: [
 		viteStaticCopy({
 			targets: [
