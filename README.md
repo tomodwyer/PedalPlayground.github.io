@@ -24,6 +24,7 @@
 -   Input dimensions in inches, with decimals (rounding to nearest hundredth)
 -   Dimensions recorded should include any jacks and protrusions, otherwise your pedal may appear elongated or squished,
 -   If you have an official measurement for the side that has no protrusions, you can find the actual measurement of the side with jacks with just a bit of algebra:
+
     ```
     ((a / b) * y) = x
 
@@ -31,10 +32,10 @@
     b = length of side in image without jacks in pixels
     y = official measurement of side without jacks in inches
     ```
+
 -   To find the dimensions of your png:
     -   GIMP: `shift + s`
     -   Photoshop: `ctrl + i`
-
 
 ## Running Locally
 
@@ -59,7 +60,7 @@ Under MacOS Mojave:
 If there is a pedal you're looking for, feel free to [log an issue](https://github.com/PedalPlayground/PedalPlayground.github.io/issues). Please follow the following rules when posting request issues:
 
 -   Double check to see if the pedal isn't already in the database.
--   Also check to see if the pedal hasn't already been included in a [pending pull](https://github.com/PedalPlayground/PedalPlayground.github.io/pulls) by our contributors.  New releases from popular builders are usually added right away.
+-   Also check to see if the pedal hasn't already been included in a [pending pull](https://github.com/PedalPlayground/PedalPlayground.github.io/pulls) by our contributors. New releases from popular builders are usually added right away.
 -   Include a high resolution image of the pedal (top-down view, preferably white background, straight on perspective)
 -   Include the dimensions of the pedal in inches (make sure the dimensions are accurate and include jacks and other protrusions)
 -   Post one issue for each pedal you're requesting

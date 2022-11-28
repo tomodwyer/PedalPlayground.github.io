@@ -1,53 +1,42 @@
 {
 	"name": "pedal-playground",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A site to help you arrange pedals",
-	"main": "gulpfile.js",
-	"dependencies": {
-		"bower": "^1.8.8",
-		"gulp": "^3.9.0",
-		"gulp-cached": "^1.1.1",
-		"gulp-concat": "^2.6.1",
-		"gulp-gzip": "^1.4.2",
-		"gulp-imagemin": "^3.4.0",
-		"gulp-livereload": "^3.8.0",
-		"gulp-minify": "^2.1.0",
-		"gulp-minify-css": "^1.2.0",
-		"gulp-notify": "^2.2.0",
-		"gulp-plumber": "^1.2.0",
-		"gulp-rename": "^1.2.2",
-		"gulp-sass": "^2.0.4",
-		"gulp-util": "^3.0.6",
-		"gulp-watch": "^4.3.5"
-	},
-
-	"devDependencies": {
-		"gulp-responsive": "^2.9.0",
-		"http-server": "^0.11.1",
-		"prettier": "2.2.1"
-	},
-
-	"scripts": {
-		"serve": "http-server ./ -o",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
+	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/tehtrav/pedal-playground.git"
 	},
-
 	"keywords": [
 		"gulp",
 		"scss",
 		"front",
 		"end"
 	],
-
 	"author": "Travis Lehman",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/tehtrav/pedal-playground/issues"
 	},
-	
-	"homepage": "https://github.com/tehtrav/pedal-playground#readme"
+	"homepage": "https://github.com/tehtrav/pedal-playground#readme",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"bootstrap-colorpicker": "^2.5.1",
+		"bootstrap-sass": "^3.3.7",
+		"chosen-js": "^1.6.2",
+		"draggabilly": "^2.1.1",
+		"jquery": "^3.1.1",
+		"sass-flex-mixin": "^1.0.3",
+		"select2": "^4.0.3"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.0",
+		"sass": "^1.56.1",
+		"vite": "^3.2.3",
+		"vite-plugin-static-copy": "^0.12.0"
+	}
 }

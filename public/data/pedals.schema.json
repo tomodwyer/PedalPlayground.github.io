@@ -26,13 +26,7 @@
 				}
 			},
 
-			"required": [
-				"Brand",
-				"Name",
-				"Width",
-				"Height",
-				"Image"
-			]
+			"required": ["Brand", "Name", "Width", "Height", "Image"]
 		},
 
 		{
@@ -59,13 +53,7 @@
 				}
 			},
 
-			"required": [
-				"Brand",
-				"Name",
-				"Width",
-				"Height",
-				"Image"
-			]
+			"required": ["Brand", "Name", "Width", "Height", "Image"]
 		}
 	]
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lan="en">
 	<head>
 		<title>Pedal Playground</title>
 
@@ -8,7 +8,6 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 		/>
-		<link rel="stylesheet" href="public/stylesheets/styles.min.css" />
 
 		<!-- meta info -->
 		<meta
@@ -21,20 +20,21 @@
 		/>
 
 		<!-- favicons -->
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-		<link rel="manifest" href="site.webmanifest" />
-		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#8576f7" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8576f7" />
 		<meta name="msapplication-TileColor" content="#2d89ef" />
 		<meta name="theme-color" content="#ffffff" />
 	</head>
-
 	<body>
 		<header class="site-header">
 			<h1><b>Pedal</b>Playground</h1>
 			<nav>
-				<a href="https://github.com/PedalPlayground/PedalPlayground.github.io/">Change Log</a>
+				<a href="https://github.com/PedalPlayground/PedalPlayground.github.io/"
+					>Change Log</a
+				>
 				<a href="https://www.paypal.me/travlehman" target="_blank">Donate</a>
 				<a
 					class="hidden-xs"
@@ -101,7 +101,6 @@
 										>Pedal</a
 									>
 								</li>
-
 							</ul>
 
 							<!-- Tab panes -->
@@ -151,7 +150,7 @@
 												placeholder="Bozz FM-2 Face Melter"
 											/>
 										</div>
-										
+
 										<div class="form-element left">
 											<label for="">Width <em>(inches)</em></label>
 											<input
@@ -211,7 +210,7 @@
 									value="25"
 								/>
 							</div>
-							
+
 							<a
 								href="#"
 								class="btn btn-sm"
@@ -272,7 +271,11 @@
 								Cancel
 							</button>
 
-							<button type="button" class="btn btn-danger" id="clear-canvas-confirmation">
+							<button
+								type="button"
+								class="btn btn-danger"
+								id="clear-canvas-confirmation"
+							>
 								Clear Canvas
 							</button>
 						</div>
@@ -284,10 +287,15 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal"
+								aria-label="Close"
+							>
 								<span aria-hidden="true">&times;</span>
 							</button>
-							
+
 							<h4 class="modal-title">Canvas Scale</h4>
 						</div>
 
@@ -308,29 +316,11 @@
 				</div>
 			</div>
 		</div>
-
-		<script type="text/javascript" src="public/scripts/scripts-min.js"></script>
-		<script>
-			(
-				function (i, s, o, g, r, a, m) {
-					i["GoogleAnalyticsObject"] = r;
-					(
-						i[r] =
-						i[r] ||
-						function () {
-							(i[r].q = i[r].q || []).push(arguments);
-						}
-					),
-
-					(i[r].l = 1 * new Date());
-					(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-					a.async = 1;
-					a.src = g;
-					m.parentNode.insertBefore(a, m);
-				}
-			)(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
-			ga("create", "UA-92858206-1", "auto");
-			ga("send", "pageview");
-		</script>
+		<script src="/assets/vendor/jquery.min.js"></script>
+		<script src="/assets/vendor/bootstrap.min.js"></script>
+		<script src="/assets/vendor/bootstrap-colorpicker.min.js"></script>
+		<script src="/assets/vendor/draggabilly.pkgd.min.js"></script>
+		<script src="/assets/vendor/select2.min.js"></script>
+		<script type="module" src="/assets/scripts/main.js"></script>
 	</body>
 </html>

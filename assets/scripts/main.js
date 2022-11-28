@@ -1,5 +1,25 @@
-var pedalImagePath = "public/images/pedals/";
-var pedalboardImagePath = "public/images/pedalboards/";
+import "../stylesheets/styles.scss";
+
+var pedalImagePath = "images/pedals/";
+var pedalboardImagePath = "images/pedalboards/";
+
+if (document.location.hostname === "www.pedalplayground.com") {
+	(function (i, s, o, g, r, a, m) {
+		i["GoogleAnalyticsObject"] = r;
+		(i[r] =
+			i[r] ||
+			function () {
+				(i[r].q = i[r].q || []).push(arguments);
+			}),
+			(i[r].l = 1 * new Date());
+		(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+	ga("create", "UA-92858206-1", "auto");
+	ga("send", "pageview");
+}
 
 $(document).ready(function () {
 	// Populate Pedalboards and Pedals lists
@@ -538,7 +558,7 @@ window.Pedal = function (type, brand, name, width, height, image) {
 window.GetPedalData = function () {
 	// console.log('GetPedalData');
 	$.ajax({
-		url: "public/data/pedals.json",
+		url: "/data/pedals.json",
 		dataType: "text",
 		type: "GET",
 		success: function (data) {
@@ -609,7 +629,7 @@ window.PedalBoard = function (brand, name, width, height, image) {
 window.GetPedalBoardData = function () {
 	// console.log('GetPedalBoardData');
 	$.ajax({
-		url: "public/data/pedalboards.json",
+		url: "/data/pedalboards.json",
 		dataType: "text",
 		type: "GET",
 		success: function (data) {

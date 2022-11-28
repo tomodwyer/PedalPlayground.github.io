@@ -4,10 +4,10 @@
 // Vendor
 @import "vendor/bootstrap-variables"; // Set custom variable overrides
 @import "vendor/bootstrap"; // Import only the files needed
-@import "bower_components/sass-flex-mixin/flex";
-@import "bower_components/bootstrap-colorpicker/src/sass/_colorpicker.scss";
-@import "bower_components/select2/src/scss/core.scss";
-@import "vendor/chosen";
+@import "sass-flex-mixin/flex";
+@import "bootstrap-colorpicker/src/sass/_colorpicker.scss";
+@import "select2/src/scss/core";
+@import "chosen-js/chosen";
 
 // Utilities
 @import "mixins";
