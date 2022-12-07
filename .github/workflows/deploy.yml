@@ -16,12 +16,11 @@ jobs:
               run: npm ci
             - name: Build assets
               run: npm run build
-            - name: Archive production artifacts
-              uses: actions/upload-artifact@v3
+            - name: Upload artifact
+              uses: actions/upload-artifact@v1
               with:
-                  name: dist
-                  path: dist
-                  retention-days: 1
+                name: github-pages
+                path: dist
 
     # Deploy job
     deploy:
